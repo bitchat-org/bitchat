@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:tileMode="repeat"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/log"
+        android:editable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="bottom"
+        android:background="#80dcdcdc"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="8px"
+        android:layout_above="@+id/button4"
+        android:layout_marginBottom="8px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/button3"
+        android:background="#f7931a"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear log"
+        android:id="@+id/button2"
+        android:background="#cecece"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/log"
+        android:layout_alignEnd="@+id/log" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test WebView"
+        android:id="@+id/button4"
+        android:background="#5aad00"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule alarm"
+        android:id="@+id/button5"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#003f9d"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5px"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+</RelativeLayout>

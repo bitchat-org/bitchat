@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    android:tileMode="repeat"
+    tools:context="bitchat.bitchatnotifier.LoginActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button1"
+        android:background="#f7931a"
+        android:textColor="#ffffff"
+        android:clickable="false"
+        android:layout_below="@+id/edit1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edit1"
+        android:layout_alignEnd="@+id/edit1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter your user ID"
+        android:textColor="#010101"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get your user ID in &quot;Settings&quot; tab on bitchat.org"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#010101"
+        android:gravity="center" />
+
+</RelativeLayout>
