@@ -1,1 +1,1 @@
-Bitchat.org
+Bitchat.org messenger
